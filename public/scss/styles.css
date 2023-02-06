@@ -172,12 +172,12 @@ body {
 
 .home-content-box {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 20px auto;
   flex-direction: column;
   position: relative;
   width: 95%;
-  height: 800px;
+  height: auto;
   text-align: center;
   border-radius: 20px;
   z-index: 1;
@@ -213,37 +213,48 @@ body {
 .home-video {
   display: flex;
   position: relative;
+  float: left;
   margin: 0 auto;
+  margin-left: 30px;
+  width: 49%;
   padding-bottom: 20px;
 }
 
-.info-section {
-  position: relative;
+.video-and-pictures {
+  width: 100%;
+  display: flex;
   margin: 0 auto;
 }
 
-.info-section > .home-info {
-  margin: auto auto 10px;
+.parts-container-home {
+  float: left;
+  width: 49%;
+  margin: 0 auto;
 }
 
-.home-info {
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  background-color: rgb(16, 107, 200);
+.parts-container-home div {
   width: 50%;
-  height: 200px;
-  flex-direction: column;
+  height: 225px;
+  margin: 0 auto;
+  margin-top: 5%;
 }
 
-.home-info > h2 {
-  color: rgb(255, 255, 255);
-  font-family: sans-serif;
+.parts-container-home img {
+  border-radius: 10px;
 }
 
-.home-info > p {
-  color: rgb(255, 255, 255);
-  font-family: sans-serif;
+.home-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.home-wrapper img {
+  border-radius: 10px;
+  height: 300px;
+  width: 575px;
+  margin-top: 20px;
+  margin: 5px;
 }
 
 @media (max-width: 1100px) {
@@ -437,7 +448,8 @@ body {
   width: 200px;
 }
 
-.electrical-modal, .actuator-modal, .cap-modal, .bracket-modal, .household-modal {
+.electrical-modal, .actuator-modal, .cap-modal, .bracket-modal,
+.household-modal, .cap-machine-modal, .metal-stamp-modal {
   position: fixed;
   display: none;
   top: 0;
@@ -499,7 +511,7 @@ body {
   right: 15px;
   font-size: 40px;
   font-weight: bold;
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
   padding: 1px 5px;
   display: none;
 }

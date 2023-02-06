@@ -91,6 +91,10 @@ $(document).ready(function(){
     $(".electrical-modal").hide()
     $(".actuator-modal").hide()
     $(".cap-modal").hide()
+    $(".bracket-modal").hide()
+    $(".household-modal").hide()
+    $(".cap-machine-modal").hide()
+    $(".metal-stamp-modal").hide()
 
     $(".part-cards-electrical").click(function(){
         $(".electrical-modal").show()
@@ -134,6 +138,24 @@ $(document).ready(function(){
     })
     $(".close-button").click(function(){
         $(".household-modal").hide()
+        $(".close-button").removeClass("active")
+    })
+
+    $(".cap-machine").click(function(){
+        $(".cap-machine-modal").show()
+        $(".close-button").addClass("active")
+    })
+    $(".close-button").click(function(){
+        $(".cap-machine-modal").hide()
+        $(".close-button").removeClass("active")
+    })
+
+    $(".metal-stamp-app").click(function(){
+        $(".metal-stamp-modal").show()
+        $(".close-button").addClass("active")
+    })
+    $(".close-button").click(function(){
+        $(".metal-stamp-modal").hide()
         $(".close-button").removeClass("active")
     })
 })
