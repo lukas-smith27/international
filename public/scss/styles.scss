@@ -35,15 +35,17 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  z-index: 100;
 }
 
 .links li {
   position: relative;
   list-style: none;
+  z-index: 100;
 }
 
 .links li a {
-  z-index: 1;
+  z-index: 100;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 25px;
@@ -53,7 +55,7 @@ body {
 }
 
 .links li p {
-  z-index: 1;
+  z-index: 100;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 30px;
@@ -62,7 +64,7 @@ body {
 }
 
 .links li ul {
-  z-index: 1;
+  z-index: 100;
   position: absolute;
   display: none;
   width: 100%;
@@ -71,27 +73,29 @@ body {
 }
 
 .links li ul li {
-  z-index: 1;
+  z-index: 10;
+  text-align: center;
+}
+
+.links li ul li a {
+  z-index: 100;
   text-align: center;
 }
 
 .links li:hover ul {
   display: block;
-  z-index: 1;
+  z-index: 100;
 }
 
 .links li:hover {
-  z-index: 1;
+  z-index: 100;
+  position: relative;
   background: rgb(16, 107, 200, .9);
 }
 
 .link li ul li:hover {
-  z-index: 1;
-}
-
-.servicesTop .aboutTop {
-  pointer-events: none;
-  cursor: default;
+  position: relative;
+  z-index: 100;
 }
 
 .small-menu {
@@ -148,15 +152,17 @@ body {
   }
   .links li {
     text-align: center;
+    z-index: 3;
   }
   .links ul ul {
     position: relative;
     width: 100%;
     flex-direction: column;
-    z-index: 1;
+    z-index: 3;
   }
   .links ul ul li {
     text-align: center;
+    z-index: 3;
   }
   .links.active {
     display: flex;
@@ -182,7 +188,7 @@ body {
   height: auto;
   text-align: center;
   border-radius: 20px;
-  z-index: 1;
+  z-index: 1.5;
   background-color: rgba(100, 100, 100, 0.3);
   overflow: hidden;
   padding-bottom: 15px;
@@ -218,7 +224,7 @@ body {
   float: left;
   margin: 0 auto;
   margin-left: 30px;
-  width: 49%;
+  width: 50%;
   padding-bottom: 20px;
 }
 
@@ -259,25 +265,41 @@ body {
   margin: 5px;
 }
 
-
-
-
-
 @media (max-width: 1100px) {
   .home-content-box {
     flex-direction: column;
-    height: 550px;
+    height: auto;
   }
   .home-content-box iframe {
     margin: 0 auto;
     max-width: 90%;
-    height: 400px;
+    height: 350px;
   }
   .home-top {
     width: 80%;
   }
   .home-top p {
     font-size: 15px;
+  }
+  .video-and-pictures {
+    flex-direction: column;
+  }
+  .home-video {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .parts-container-home {
+    width: 100%;
+  }
+  .home-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .home-wrapper img {
+    width: 90%;
+    height: 200px;
   }
 }
 
@@ -301,7 +323,7 @@ body {
   height: auto;
   text-align: center;
   border-radius: 20px;
-  z-index: 1;
+  z-index: 1.5;
   background-color: rgba(100, 100, 100, 0.5);
 }
 
@@ -480,7 +502,7 @@ body {
   border-bottom-right-radius: 15px;
   top: 5%;
   position: relative;
-  background-color: rgb(150, 150, 150);
+  background-color: rgb(120, 120, 120, .9);
   margin: 100px auto;
   width: 100%;
   max-width: 70%;
@@ -769,7 +791,7 @@ h2 {
 
 .map {
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 
