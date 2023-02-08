@@ -723,6 +723,20 @@ h2 {
     font-size: 18px;
   }
 }
+/*/////////////////// Careers Page /////////////////*/
+.job-header {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+.job-posting {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
 /*/////////////////// Contact Page /////////////////*/
 .contact {
   position: relative;
