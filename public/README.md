@@ -1,1 +1,0 @@
-# _BJ_Medical

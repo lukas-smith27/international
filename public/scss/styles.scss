@@ -320,12 +320,12 @@ body {
   flex-direction: column;
   margin: 20px auto;
   position: relative;
-  width: 90%;
+  width: 100%;
   height: auto;
   text-align: center;
   border-radius: 20px;
   z-index: 1.5;
-  background-color: rgba(100, 100, 100, 0.0);
+  background-color: transparent;
 }
 
 .content-box a {
@@ -411,8 +411,18 @@ body {
   font-family: sans-serif;
 }
 
+.parts-container {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .part-cards-elbow1, .part-cards-polish1, .part-cards-coupling1,
 .part-cards-cavity1, .part-cards-pipe1 {
+  margin: 0 auto;
   align-items: center;
   border-radius: 20px;
   max-width: 490px;
