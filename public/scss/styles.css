@@ -533,7 +533,7 @@ body {
   border-bottom-right-radius: 15px;
   top: 5%;
   position: relative;
-  background-color: rgba(120, 120, 120, 0.9);
+  background-color: rgba(120, 120, 120, 0.5);
   margin: 100px auto;
   width: 100%;
   max-width: 70%;
@@ -838,6 +838,11 @@ h2 {
   float: left;
   width: 49%;
   margin-bottom: 10px;
+}
+
+.office-hours a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 @media (max-width: 300px) {
