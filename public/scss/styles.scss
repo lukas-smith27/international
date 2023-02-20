@@ -341,6 +341,33 @@ body {
   font-family: sans-serif;
 }
 
+.history-content-box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 20px;
+  z-index: 1.5;
+  background-color: transparent;
+}
+
+.history-content-box a {
+  text-decoration: none;
+}
+
+.history-content-box p {
+  margin: 0 auto;
+  width: 80%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: left;
+  font-family: sans-serif;
+  margin-bottom: 15px;
+}
+
 
 /*/////////////////// Team Page /////////////////*/
 #teamHeader {
