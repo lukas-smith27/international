@@ -1,20 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="0; url:'./index.html'">
-        <title>B&J International, LLC</title>
+        <meta http-equiv="refresh" content="0; url:'./testForm.html'">
+        <title>REQUEST A QUOTE | B&J International, LLC</title>
         <link rel="stylesheet" href="../public/scss/styles.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cookie" type="text/css">
         <script type="text/javascript" src="../public/javascript/jQuery.js" defer></script>
         <script type="text/javascript" src="../public/javascript/main.js" defer></script>
     </head>
-    <body>
+
+    <body onbeforeunload="backClick()">
         <nav class="navigation-bar">
-            <div class="company">
-                <a href="./index.html" class="logo-home"><img src="../public/images/international-logo-transparent_transparent.png"></a></div>
+            <div class="company"><a href="./index.html" class="logo-home"><img src="../public/images/international-logo-transparent_transparent.png"></a></div>
             <a href="#" class="small-menu">
                 <span class="lines"></span>
                 <span class="lines"></span>
@@ -42,71 +43,47 @@
                 </ul>
             </div>
         </nav>
-
+        
         <img class="home-background" src="../public/images/laser-cutter.png">
 
-        <div class="home-content-box">
-            <div class="home-top">
-                <p>International Tool Prices, American Tool Support</p>
-            </div>
-            <div class="video-and-pictures">
-                <div class="home-video">
-                    <iframe width="1000" height="600" src="https://www.youtube.com/embed/hzOXMl1l8M8?controls=0&mute=1&rel=0&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
-    
-                <div class="parts-container-home">
-                    <h2 class="picture-highlights">Mold / Machine Highlight Photos</h2>
-                    <div class="cap-machine">
-                        <img src="../public/images/16.jpg " height="232.25px" width="450px">
-                    </div>
-                    <div class="metal-stamp-app">
-                        <img src="../public/images/IMG_0467.jpg " height="232.25px" width="450px">
-                    </div>
-                </div>
-            </div>
+        <div class="content-box">
+            <h1 id="quoteHeader">Request A Quote</h1>
+            <h2 id="quote-instructions">Click the button below to start a quote request or email <em>rmccraner@bjinternationalllc.com</em> 
+                and include <u>ALL</u> of the following information:</h2>
 
-            <div id="part-modals">
-                <div class="cap-machine-modal">
-                    <div class="modal-info">
-                        <div class="modal-head">
-                            <h2>128 Cavity Stack Mold</h2>
-                            <span class="close-button">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <div class="image-container">
-                                <div class="home-wrapper">
-                                    <img src="../public/images/16.jpg">
-                                    <img src="../public/images/19.jpg">
-                                    <img src="../public/images/20.jpg">
-                                    <img src="../public/images/30.jpg">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="metal-stamp-modal">
-                    <div class="modal-info">
-                        <div class="modal-head">
-                            <h2>Metal Stamping Die Design & Build / Parts</h2>
-                            <span class="close-button">&times;</span>
-                        </div>
-                        <div class="modal-body">
-                            <div class="image-container">
-                                <div class="home-wrapper">
-                                    <img src="../public/images/MOLD44.png">
-                                    <img src="../public/images/IMG_0016.png">
-                                    <img src="../public/images/IMG_0467.jpg">
-                                    <img src="../public/images/diecut.jpg">
-                                    <img src="../public/images/parts2.jpg">
-                                    <img src="../public/images/slide1.jpg">
-                                    <img src="../public/images/slidecut.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="input-section-test">
+                <ul>
+                    <li>- Name</li>
+                    <li>- Company</li>
+                    <li>- Address, City, State, Zip, and Country</li>
+                    <li>- Phone Number</li>
+                    <li>- Email</li>
+                    <li>- Fax (Optional)</li>
+                    <li>- Company Site (Optional)</li><br>
+                    
+                    <li>- What applications you are interested in:
+                        <ul>
+                            <li>- Low-Cost-Country Metal Stamping Die Design & Build</li>
+                            <li>- Low-Cost-Country Mold Design & Build</li>
+                            <li>- Other</li><br>
+                        </ul>
+                    </li>
+
+                    <li>- Any additional information</li><br>
+
+                    <li>- How you would like us to contact you:
+                        <ul>
+                            <li>- Phone or</li>
+                            <li>- Email</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="emailButton">
+                <a href="mailto:rmccraner@bjinternationalllc.com" target="_blank" rel="noopener noreferrer">Request Quote</a>
             </div>
         </div>
-
+        
         <footer>
             <div class="content">
                 <ul class="contacts-location">

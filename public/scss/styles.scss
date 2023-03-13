@@ -778,6 +778,50 @@ h2 {
   font-family: sans-serif;
 }
 
+.input-section-test {
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  padding-bottom: 30px;
+}
+
+.input-section-test ul {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-left: 30px;
+}
+
+.input-section-test ul li {
+  list-style: none;
+  text-align: left;
+}
+
+#emailButton {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  background-color: rgb(16, 107, 200);
+}
+
+#emailButton a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+#emailButton:hover {
+  background-color: rgb(75, 75, 75);
+  cursor: pointer;
+}
+
 @media (max-width: 750px) {
   .input-section {
     align-items: center;
@@ -792,6 +836,22 @@ h2 {
   }
   .input-section label {
     font-size: 18px;
+  }
+  .input-section-test {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+  }
+  #emailButton {
+    width: 20%;
+    height: 60px;
+  }
+  #quote-instructions {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
