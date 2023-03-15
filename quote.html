@@ -52,28 +52,28 @@
 
             <div class="input-section">
                 <form method="post" onsubmit="emailSend(); reset(); return false;">
-                    <input type="text" class="contact-name" placeholder="*Name"><br>
-                <input type="text" class="contact-company" placeholder="*Company"><br>
-                <input type="text" class="address" placeholder="*Street"><br>
-                <input type="text" class="address2" placeholder="Address Line 2"><br>
+                    <input type="text" class="contact-name" name="Name" placeholder="*Name"><br>
+                <input type="text" class="contact-company" name="Company" placeholder="*Company"><br>
+                <input type="text" class="address" name="Address Line 1" placeholder="*Street"><br>
+                <input type="text" class="address2" name="Address Line 2" placeholder="Address Line 2"><br>
                 <div class="input-small">
-                    <input type="text" class="city" placeholder="*City">
-                    <input type="text" class="state" placeholder="*State">
-                    <input type="text" class="zip" placeholder="*Zip / Postal Code">
-                    <input type="text" class="country" placeholder="*Country">
+                    <input type="text" class="city" name="City" placeholder="*City">
+                    <input type="text" class="state" name="State" placeholder="*State">
+                    <input type="text" class="zip" name="Zip" placeholder="*Zip / Postal Code">
+                    <input type="text" class="country" name="Country" placeholder="*Country">
                 </div>
-                <input type="text" class="phone" placeholder="*Phone"><br>
-                <input type="text" class="email" placeholder="*Email"><br>
-                <input type="text" class="website" placeholder="Company Website"><br>
-                <input type="text" class="fax" placeholder="Fax Number"><br>
-                <input type="checkbox" id="metalStamp" name="application-choice" value="Low-Cost-Country Metal Stamping Die Design & Build"><label for="metalStamp">Low-Cost-Country Metal Stamping Die Design & Build</label><br>
-                <input type="checkbox" id="moldDesign" name="application-choice" value="Low-Cost-Country Mold Design & Build"><label for="moldDesign">Low-Cost-Country Mold Design & Build</label><br>
-                <input type="checkbox" id="otherApp" name="application-choice" value="Other"><label for="otherApp">Other</label><br>
-                <input type="text" class="additional-info" placeholder="Add any additional information here"><br>
+                <input type="text" class="phone" name="Phone" placeholder="*Phone"><br>
+                <input type="text" class="email" name="Email" placeholder="*Email"><br>
+                <input type="text" class="website" name="Website" placeholder="Company Website"><br>
+                <input type="text" class="fax" name="Fax" placeholder="Fax Number"><br>
+                <input type="checkbox" id="metalStamp" name="applicationChoice" value="Low-Cost-Country Metal Stamping Die Design & Build"><label for="metalStamp">Low-Cost-Country Metal Stamping Die Design & Build</label><br>
+                <input type="checkbox" id="moldDesign" name="applicationChoice" value="Low-Cost-Country Mold Design & Build"><label for="moldDesign">Low-Cost-Country Mold Design & Build</label><br>
+                <input type="checkbox" id="otherApp" name="applicationChoice" value="Other"><label for="otherApp">Other</label><br>
+                <input type="text" class="additional-info" name="Additional Info" placeholder="Add any additional information here"><br>
                 <h2 id="quote-instructions">How would you like us to contact you?</h2>
-                <input type="checkbox" id="phone-contact" name="contact-method" value="phone"><label for="phone-contact">Phone</label>
-                <input type="checkbox" id="email-contact" name="contact-method" value="email"><label for="email-contact">Email</label><br><br>
-                <button class="form-submit" type="submit">Submit</button><br>
+                <input type="checkbox" id="phone-contact" name="contactMethod" value="phone"><label for="phone-contact">Phone</label>
+                <input type="checkbox" id="email-contact" name="contactMethod" value="email"><label for="email-contact">Email</label><br><br>
+                <input type="submit" class="form-submit" name="Submit" value="Submit"><br>
                 </form>
             </div>
         </div>
