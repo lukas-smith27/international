@@ -445,29 +445,57 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.part-cards-elbow1, .part-cards-polish1, .part-cards-coupling1,
-.part-cards-cavity1, .part-cards-pipe1 {
-  margin: 0 auto;
-  align-items: center;
-  border-radius: 20px;
-  max-width: 490px;
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: block;
+.moldsImgRow {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.moldsImgRow #topRow {
+  height: 350px;
+  width: 300px;
   margin: 10px;
-  padding: 20px;
-  margin-bottom: 50px;
-}
-
-.part-cards-elbow1 img, .part-cards-polish1 img, .part-cards-coupling1 img,
-.part-cards-cavity1 img, .part-cards-pipe1 img {
   border-radius: 10px;
-  width: 350px;
 }
 
+.moldsImgRow #midRow {
+  height: 350px;
+  width: 600px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.moldsImgRow #bottomRow {
+  height: 350px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+  .moldsImgRow {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .moldsImgRow #topRow, .moldsImgRow #bottomRow {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 250px;
+    width: 200px;
+  }
+  .moldsImgRow #midRow {
+    height: 200px;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
 
 /*/////////////////// Machine Page /////////////////*/
 #machineHeader {
