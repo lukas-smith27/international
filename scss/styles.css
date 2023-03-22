@@ -444,11 +444,15 @@ body {
 }
 
 .moldsImgRow {
+  justify-content: center;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
 .moldsImgRow #topRow {
+  flex-wrap: wrap;
   height: 350px;
   width: 300px;
   margin: 10px;
@@ -751,7 +755,7 @@ h2 {
 }
 
 .input-small input[type=text] {
-  width: 38%;
+  width: 38.75%;
   margin: 10px 20px;
 }
 
@@ -819,6 +823,11 @@ h2 {
   text-align: left;
 }
 
+.input-section textarea {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
 #emailButton {
   color: rgb(255, 255, 255);
   font-size: 25px;
@@ -865,6 +874,9 @@ h2 {
     margin: 0 auto;
     text-align: center;
     width: 95%;
+  }
+  .input-section textarea {
+    font-size: 20px;
   }
   #emailButton {
     width: auto;
